@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$x = exec('pwd');
+			$x = exec('ls');
 
 			$messages = [
 				'type' => 'text',
