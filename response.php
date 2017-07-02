@@ -1,2 +1,2 @@
 <?php
-echo "DF";
+echo exec('pwd');
