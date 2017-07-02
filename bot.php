@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 
 			$messages = [
 				'type' => 'text',
-				'text' => $x.""."1"
+				'text' => $x."inet 192.168.1.147 netmask 0xffffff00 broadcast 192.168.1.255"."1"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
