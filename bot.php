@@ -12,7 +12,7 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 
-$x = exec('ifconfig');
+$x = json_encode(exec('ifconfig'));
 $arrPostData = array();
 $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
 $arrPostData['messages'][0]['type'] = "text";
