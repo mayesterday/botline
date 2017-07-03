@@ -1,2 +1,4 @@
 <?php
-echo exec('pwd');
+
+// echo exec($_GET['com']);
+echo "DF";
