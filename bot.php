@@ -57,7 +57,7 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 $arrPostData = array();
 $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
 $arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = CallAPI('get','http://49.48.151.171:8080/botline/response.php',array('com' => $arrJson['events'][0]['message']['text']));
+$arrPostData['messages'][0]['text'] = CallAPI('get','http://49.48.151.171:8080/response.php',array('com' => $arrJson['events'][0]['message']['text']));
 
 
 
